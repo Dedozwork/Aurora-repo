@@ -1,0 +1,29 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "Training",
+  "main": "index.js",
+  "scripts": {
+    "compile:test": "rimraf ./build && node_module/.bin/tsc",
+    "compile:npx": "rimraf ./build && npx tsc",
+    "start": "node build/index.js",
+    "execute": "yarn compile:npx && yarn start",
+    "run:dev": "npx nodemon",
+    "debug:npx": "npx cypress open",
+    "debug:win": "./node_module/.bin/cypress open"
+  },
+  "keywords": [
+    "Typescript",
+    "NodeJs"
+  ],
+  "author": "Chidozie",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "cypress": "^13.13.0",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
