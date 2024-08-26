@@ -10,7 +10,15 @@
     "execute": "yarn compile:npx && yarn start",
     "run:dev": "npx nodemon",
     "debug:npx": "npx cypress open",
-    "debug:win": "./node_module/.bin/cypress open"
+    "debug:win": "./node_module/.bin/cypress open",
+
+    "cy:run:all": "Cypress run",
+    "npx:cy:run:chrome:headed": "Cypress run --headed --browser chrome --spec cypress/e2e/example/training.cy.ts",
+    "cy:run:chrome:headless": "Cypress run --headless --browser chrome",
+    "cy:run:firefox:headless": "Cypress run --headless --browser firefox",
+    "cy:run:firefox:headed": "Cypress run --headed --browser firefox",
+    "cy:run:edge:headed": "Cypress run --headed --browser edge"
+
   },
   "keywords": [
     "Typescript",
